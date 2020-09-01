@@ -23,6 +23,8 @@ text1 = """
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{amsthm}
+
 \usepackage{setspace}
 \setstretch{1.7}
 \usepackage{graphicx}
@@ -53,6 +55,19 @@ text1 = """
   breakatwhitespace=true,
   tabsize=4
 }
+
+\\theoremstyle{definition}
+\\newtheorem{definition}{Definition}[section]
+
+\\newtheorem{theorem}{Theorem}[section]
+\\newtheorem{corollary}{Corollary}[theorem]
+\\newtheorem{lemma}[theorem]{Lemma}
+
+
+\\newcommand{\OR}{\\vee}
+
+\\newcommand{\AND}{\wedge}
+
 """
 textA = """\\author{Thaqib Mo.}"""
 
