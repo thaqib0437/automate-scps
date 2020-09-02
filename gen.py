@@ -6,7 +6,7 @@ import random
 
 
 
-def gen(d, name): 
+def gen(d, name, den = 0.5): 
 	data = np.zeros((d,d, 3), dtype=np.uint8)
 	s = random.choice(range(255))
 	random.seed(s)
@@ -34,7 +34,7 @@ def gen(d, name):
 		print(i)
 		print(i+70)
 		for j in range(35,325,70):
-			if random.random()>0.3:
+			if random.random()>den:
 				data[i:i+70, j:j+70]=block
         #Reflecting the image
 	data[0:420,35:105] = data[0:420,315:385]
