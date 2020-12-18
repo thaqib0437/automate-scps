@@ -12,11 +12,6 @@ else:
 #c = """C:\Users\thaqi\Desktop\UW\"""
 #os.chdir(c)
 
-path = "Desktop\UW"
-os.chdir(path)
-
-print(path)
-
 
 os.mkdir(foldername)
 os.chdir(foldername)
